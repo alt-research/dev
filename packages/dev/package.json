@@ -17,11 +17,9 @@
   "version": "0.0.1",
   "bin": {
     "alt-research-ci-ghact-build": "./scripts/alt-research-ci-ghact-build.mjs",
-    "alt-research-ci-ghpages-force": "./scripts/alt-research-ci-ghpages-force.mjs",
     "alt-research-dev-build-ts": "./scripts/alt-research-dev-build-ts.mjs",
     "alt-research-dev-circular": "./scripts/alt-research-dev-circular.mjs",
     "alt-research-dev-clean-build": "./scripts/alt-research-dev-clean-build.mjs",
-    "alt-research-dev-contrib": "./scripts/alt-research-dev-contrib.mjs",
     "alt-research-dev-copy-to": "./scripts/alt-research-dev-copy-to.mjs",
     "alt-research-dev-run-lint": "./scripts/alt-research-dev-run-lint.mjs",
     "alt-research-dev-run-prettier": "./scripts/alt-research-dev-run-prettier.mjs",

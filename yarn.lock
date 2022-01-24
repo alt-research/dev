@@ -80,11 +80,9 @@ __metadata:
     yargs: ^17.3.1
   bin:
     alt-research-ci-ghact-build: ./scripts/alt-research-ci-ghact-build.mjs
-    alt-research-ci-ghpages-force: ./scripts/alt-research-ci-ghpages-force.mjs
     alt-research-dev-build-ts: ./scripts/alt-research-dev-build-ts.mjs
     alt-research-dev-circular: ./scripts/alt-research-dev-circular.mjs
     alt-research-dev-clean-build: ./scripts/alt-research-dev-clean-build.mjs
-    alt-research-dev-contrib: ./scripts/alt-research-dev-contrib.mjs
     alt-research-dev-copy-to: ./scripts/alt-research-dev-copy-to.mjs
     alt-research-dev-run-lint: ./scripts/alt-research-dev-run-lint.mjs
     alt-research-dev-run-prettier: ./scripts/alt-research-dev-run-prettier.mjs
@@ -93,7 +91,6 @@ __metadata:
     alt-research-dev-yarn-only: ./scripts/alt-research-dev-yarn-only.mjs
     alt-research-exec-eslint: ./scripts/alt-research-exec-eslint.mjs
     alt-research-exec-ghpages: ./scripts/alt-research-exec-ghpages.mjs
-    alt-research-exec-ghrelease: ./scripts/alt-research-exec-ghrelease.mjs
     alt-research-exec-prettier: ./scripts/alt-research-exec-prettier.mjs
     alt-research-exec-rollup: ./scripts/alt-research-exec-rollup.mjs
     alt-research-exec-tsc: ./scripts/alt-research-exec-tsc.mjs

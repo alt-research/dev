@@ -113,7 +113,6 @@ function gitBump () {
     }
   }
 
-  execSync('yarn alt-research-dev-contrib');
   execSync('git add --all .');
 }
 
