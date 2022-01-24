@@ -1,7 +1,4 @@
 #!/usr/bin/env node
-// Copyright 2017-2022 @polkadot/dev authors & contributors
-// SPDX-License-Identifier: Apache-2.0
-
 import fs from 'fs';
 import path from 'path';
 import yargs from 'yargs';
@@ -47,7 +44,7 @@ function updatePackage (version, others, pkgPath, json) {
   fs.writeFileSync(pkgPath, `${JSON.stringify(updated, null, 2)}\n`);
 }
 
-console.log('$ polkadot-dev-version', process.argv.slice(2).join(' '));
+console.log('$ alt-research-dev-version', process.argv.slice(2).join(' '));
 
 execSync(`yarn version ${type === 'pre' ? 'prerelease' : type}`);
 

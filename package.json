@@ -1,34 +1,33 @@
 {
   "author": "Jaco Greeff <jacogr@gmail.com>",
-  "bugs": "https://github.com/polkadot-js/dev/issues",
-  "homepage": "https://github.com/polkadot-js/dev#readme",
+  "bugs": "https://github.com/alt-research/dev/issues",
+  "homepage": "https://github.com/alt-research/dev#readme",
   "license": "Apache-2.0",
   "packageManager": "yarn@3.1.1",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/polkadot-js/dev.git"
+    "url": "https://github.com/alt-research/dev.git"
   },
   "sideEffects": false,
   "type": "commonjs",
-  "version": "0.65.44",
+  "version": "0.0.1",
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
-    "build": "polkadot-dev-build-ts",
+    "build": "alt-research-dev-build-ts",
     "build:extra": "(cd packages/dev && copyfiles config/* scripts/* build)",
-    "build:release": "polkadot-ci-ghact-build --skip-beta",
-    "clean": "polkadot-dev-clean-build",
-    "docs": "polkadot-dev-build-docs",
-    "lint": "polkadot-dev-run-lint",
-    "postinstall": "./packages/dev/scripts/polkadot-dev-yarn-only.mjs",
-    "prettier": "./packages/dev/scripts/polkadot-dev-run-prettier.mjs",
-    "test": "yarn build && yarn test:esm && polkadot-dev-run-test --coverage",
+    "build:release": "alt-research-ci-ghact-build --skip-beta",
+    "clean": "alt-research-dev-clean-build",
+    "lint": "alt-research-dev-run-lint",
+    "postinstall": "./packages/dev/scripts/alt-research-dev-yarn-only.mjs",
+    "prettier": "./packages/dev/scripts/alt-research-dev-run-prettier.mjs",
+    "test": "yarn build && yarn test:esm && alt-research-dev-run-test --coverage",
     "test:esm": "node ./tester.cjs && node ./tester.mjs"
   },
   "devDependencies": {
-    "@polkadot/dev": "workspace:packages/dev",
+    "@alt-research/dev": "workspace:packages/dev",
     "copyfiles": "^2.4.1"
   },
   "resolutions": {

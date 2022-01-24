@@ -1,6 +1,3 @@
-// Copyright 2017-2022 @polkadot/dev authors & contributors
-// SPDX-License-Identifier: Apache-2.0
-
 // adapted from the unmaintained https://github.com/mysticatea/cpx implementation
 // Copyright (c) 2015 Toru Nagashima under MIT
 //

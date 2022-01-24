@@ -1,7 +1,4 @@
 #!/usr/bin/env node
-// Copyright 2017-2022 @polkadot/dev authors & contributors
-// SPDX-License-Identifier: Apache-2.0
-
 import fs from 'fs';
 import os from 'os';
 import path from 'path';
@@ -11,7 +8,7 @@ import copySync from './copySync.mjs';
 import execSync from './execSync.mjs';
 import gitSetup from './gitSetup.mjs';
 
-console.log('$ polkadot-ci-ghact-build', process.argv.slice(2).join(' '));
+console.log('$ alt-research-ci-ghact-build', process.argv.slice(2).join(' '));
 
 const repo = `https://${process.env.GH_PAT}@github.com/${process.env.GITHUB_REPOSITORY}.git`;
 
@@ -26,7 +23,7 @@ const argv = yargs(process.argv.slice(2))
   .argv;
 
 function runClean () {
-  execSync('yarn polkadot-dev-clean-build');
+  execSync('yarn alt-research-dev-clean-build');
 }
 
 function runCheck () {
@@ -102,21 +99,21 @@ function gitBump () {
 
   if (argv['skip-beta'] || patch === '0') {
     // don't allow beta versions
-    execSync('yarn polkadot-dev-version patch');
+    execSync('yarn alt-research-dev-version patch');
   } else {
     const triggerPath = path.join(process.cwd(), '.123trigger');
     const available = fs.readFileSync(triggerPath, 'utf-8').split('\n');
 
     if (tag || patch === '1' || available.includes(currentVersion)) {
       // if we have a beta version, just continue the stream of betas
-      execSync('yarn polkadot-dev-version pre');
+      execSync('yarn alt-research-dev-version pre');
     } else {
       // manual setting of version, make some changes so we can commit
       fs.appendFileSync(triggerPath, `\n${currentVersion}`);
     }
   }
 
-  execSync('yarn polkadot-dev-contrib');
+  execSync('yarn alt-research-dev-contrib');
   execSync('git add --all .');
 }
 
@@ -153,7 +150,7 @@ skip-checks: true"`);
       ? `--assets ${process.env.GH_RELEASE_FILES}`
       : '';
 
-    execSync(`yarn polkadot-exec-ghrelease --draft ${files} --yes`);
+    execSync(`yarn alt-research-exec-ghrelease --draft ${files} --yes`);
   }
 }
 

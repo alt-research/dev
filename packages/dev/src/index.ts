@@ -1,7 +1,4 @@
-// Copyright 2017-2022 @polkadot/dev authors & contributors
-// SPDX-License-Identifier: Apache-2.0
-
-import type { BlahType } from '@polkadot/dev/types';
+import type { BlahType } from '@alt-research/dev/types';
 import type { EchoString } from './types';
 
 import { foo } from './test1/foo';

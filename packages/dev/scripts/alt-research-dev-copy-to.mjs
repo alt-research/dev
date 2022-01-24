@@ -1,7 +1,4 @@
 #!/usr/bin/env node
-// Copyright 2017-2022 @polkadot/dev authors & contributors
-// SPDX-License-Identifier: Apache-2.0
-
 import fs from 'fs';
 import mkdirp from 'mkdirp';
 import path from 'path';
@@ -12,7 +9,7 @@ import execSync from './execSync.mjs';
 
 const args = process.argv.slice(2);
 
-console.log('$ polkadot-dev-copy-to', args.join(' '));
+console.log('$ alt-research-dev-copy-to', args.join(' '));
 
 if (args.length !== 1) {
   throw new Error('Expected one <destination> argument');

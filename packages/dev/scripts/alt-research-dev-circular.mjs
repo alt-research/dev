@@ -1,10 +1,7 @@
 #!/usr/bin/env node
-// Copyright 2017-2022 @polkadot/dev authors & contributors
-// SPDX-License-Identifier: Apache-2.0
-
 import madge from 'madge';
 
-console.log('$ polkadot-dev-circular', process.argv.slice(2).join(' '));
+console.log('$ alt-research-dev-circular', process.argv.slice(2).join(' '));
 
 madge('./', { fileExtensions: ['ts', 'tsx'] })
   .then((res) => {

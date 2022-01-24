@@ -1,6 +1,3 @@
-// Copyright 2017-2022 @polkadot/dev authors & contributors
-// SPDX-License-Identifier: Apache-2.0
-
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 
 import pluginAlias from '@rollup/plugin-alias';
@@ -13,11 +10,11 @@ import path from 'path';
 import pluginCleanup from 'rollup-plugin-cleanup';
 
 function sanitizePkg (pkg) {
-  return pkg.replace('@polkadot/', '');
+  return pkg.replace('@alt-research/', '');
 }
 
 function createName (input) {
-  return `polkadot-${sanitizePkg(input)}`
+  return `alt-research-${sanitizePkg(input)}`
     .toLowerCase()
     .replace(/[^a-zA-Z0-9]+(.)/g, (_, c) => c.toUpperCase());
 }
@@ -41,7 +38,7 @@ export function createOutput (_pkg, external, globals) {
   const pkg = sanitizePkg(_pkg);
 
   return {
-    file: `packages/${pkg}/build/bundle-polkadot-${pkg}.js`,
+    file: `packages/${pkg}/build/bundle-alt-research-${pkg}.js`,
     format: 'umd',
     globals: external.reduce((all, pkg) => ({
       [pkg]: createName(pkg),

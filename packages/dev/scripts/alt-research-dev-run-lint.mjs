@@ -1,13 +1,10 @@
 #!/usr/bin/env node
-// Copyright 2017-2022 @polkadot/dev authors & contributors
-// SPDX-License-Identifier: Apache-2.0
-
 import yargs from 'yargs';
 
 import { __dirname } from './dirname.mjs';
 import execSync from './execSync.mjs';
 
-console.log('$ polkadot-dev-run-lint', process.argv.slice(2).join(' '));
+console.log('$ alt-research-dev-run-lint', process.argv.slice(2).join(' '));
 
 const argv = yargs(process.argv.slice(2))
   .options({
@@ -29,9 +26,9 @@ if (!argv['skip-eslint']) {
     ? ''
     : '--fix';
 
-  execSync(`yarn polkadot-exec-eslint ${extra} --resolve-plugins-relative-to ${__dirname} --ext .js,.cjs,.mjs,.ts,.tsx ${process.cwd()}`);
+  execSync(`yarn alt-research-exec-eslint ${extra} --resolve-plugins-relative-to ${__dirname} --ext .js,.cjs,.mjs,.ts,.tsx ${process.cwd()}`);
 }
 
 if (!argv['skip-tsc']) {
-  execSync('yarn polkadot-exec-tsc --noEmit --emitDeclarationOnly false --pretty --project tsconfig.build.json');
+  execSync('yarn alt-research-exec-tsc --noEmit --emitDeclarationOnly false --pretty --project tsconfig.build.json');
 }

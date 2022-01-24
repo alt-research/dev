@@ -1,7 +1,4 @@
 #!/usr/bin/env node
-// Copyright 2017-2022 @polkadot/dev authors & contributors
-// SPDX-License-Identifier: Apache-2.0
-
 import fs from 'fs';
 import mkdirp from 'mkdirp';
 
@@ -10,7 +7,7 @@ import execSync from './execSync.mjs';
 const tmpDir = 'packages/build';
 const tmpFile = `${tmpDir}/CONTRIBUTORS`;
 
-console.log('$ polkadot-dev-contrib', process.argv.slice(2).join(' '));
+console.log('$ alt-research-dev-contrib', process.argv.slice(2).join(' '));
 
 mkdirp.sync(tmpDir);
 execSync(`git shortlog master -e -n -s > ${tmpFile}`);

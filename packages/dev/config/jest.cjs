@@ -1,6 +1,3 @@
-// Copyright 2017-2022 @polkadot/dev authors & contributors
-// SPDX-License-Identifier: Apache-2.0
-
 const fs = require('fs');
 const { defaults } = require('jest-config');
 
@@ -26,6 +23,6 @@ module.exports = {
     '^.+\\.(js|jsx|ts|tsx)$': require.resolve('babel-jest')
   },
   transformIgnorePatterns: [
-    '/node_modules/(?!@polkadot|@babel/runtime/helpers/esm/)'
+    '/node_modules/(?!@alt-research|@babel/runtime/helpers/esm/)'
   ]
 };

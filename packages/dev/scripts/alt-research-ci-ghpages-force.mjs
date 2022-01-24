@@ -1,12 +1,9 @@
 #!/usr/bin/env node
-// Copyright 2017-2022 @polkadot/dev authors & contributors
-// SPDX-License-Identifier: Apache-2.0
-
 import fs from 'fs';
 
 import execSync from './execSync.mjs';
 
-console.log('$ polkadot-ci-ghpages-force', process.argv.slice(2).join(' '));
+console.log('$ alt-research-ci-ghpages-force', process.argv.slice(2).join(' '));
 
 // ensure we are on master
 execSync('git checkout master');

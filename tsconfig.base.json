@@ -1,9 +1,9 @@
 {
-  "extends": "@polkadot/dev/config/tsconfig.json",
+  "extends": "@alt-research/dev/config/tsconfig.json",
   "compilerOptions": {
     "composite": true,
     "paths": {
-      "@polkadot/dev/*": ["dev/src/*"]
+      "@alt-research/dev/*": ["dev/src/*"]
     },
     "skipLibCheck": true
   }
