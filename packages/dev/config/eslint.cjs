@@ -78,6 +78,7 @@ module.exports = {
     'arrow-parens': ['error', 'always'],
     'default-param-last': [0], // conflicts with TS version (this one doesn't allow TS ?)
     'header/header': 'off',
+    'import-newlines/enforce': 'off',
     'multiline-ternary': 'off',
     'jsx-a11y/anchor-is-valid': 'off',
     'jsx-a11y/click-events-have-key-events': 'off',
@@ -136,7 +137,9 @@ module.exports = {
     '@typescript-eslint/no-unsafe-return': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/unbound-method': 'off',
-    '@typescript-eslint/restrict-template-expressions': 'off'
+    '@typescript-eslint/restrict-template-expressions': 'off',
+    '@typescript-eslint/no-floating-promises': 'off',
+    '@typescript-eslint/no-misused-promises': 'off'
   },
   settings: {
     'import/extensions': ['.js', '.ts', '.tsx'],
