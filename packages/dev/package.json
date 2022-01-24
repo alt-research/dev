@@ -30,7 +30,6 @@
     "alt-research-dev-yarn-only": "./scripts/alt-research-dev-yarn-only.mjs",
     "alt-research-exec-eslint": "./scripts/alt-research-exec-eslint.mjs",
     "alt-research-exec-ghpages": "./scripts/alt-research-exec-ghpages.mjs",
-    "alt-research-exec-ghrelease": "./scripts/alt-research-exec-ghrelease.mjs",
     "alt-research-exec-prettier": "./scripts/alt-research-exec-prettier.mjs",
     "alt-research-exec-rollup": "./scripts/alt-research-exec-rollup.mjs",
     "alt-research-exec-tsc": "./scripts/alt-research-exec-tsc.mjs",

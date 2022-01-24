@@ -119,17 +119,6 @@ function gitBump () {
 
 function gitPush () {
   const version = npmGetVersion();
-  let doGHRelease = false;
-
-  if (process.env.GH_RELEASE_GITHUB_API_TOKEN) {
-    const changes = fs.readFileSync('CHANGELOG.md', 'utf8');
-
-    if (changes.includes(`## ${version}`)) {
-      doGHRelease = true;
-    } else if (version.endsWith('.1')) {
-      throw new Error(`Unable to release, no CHANGELOG entry for ${version}`);
-    }
-  }
 
   execSync('git add --all .');
 
@@ -144,14 +133,6 @@ function gitPush () {
 skip-checks: true"`);
 
   execSync(`git push ${repo} HEAD:${process.env.GITHUB_REF}`, true);
-
-  if (doGHRelease) {
-    const files = process.env.GH_RELEASE_FILES
-      ? `--assets ${process.env.GH_RELEASE_FILES}`
-      : '';
-
-    execSync(`yarn alt-research-exec-ghrelease --draft ${files} --yes`);
-  }
 }
 
 function loopFunc (fn) {
