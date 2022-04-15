@@ -10,7 +10,7 @@ import gitSetup from './gitSetup.mjs';
 
 console.log('$ alt-research-ci-ghact-build', process.argv.slice(2).join(' '));
 
-const repo = `https://${process.env.GH_PAT}@github.com/${process.env.GITHUB_REPOSITORY}.git`;
+const repo = `https://x-access-token:${process.env.GITHUB_TOKEN}@github.com/${process.env.GITHUB_REPOSITORY}.git`;
 
 const argv = yargs(process.argv.slice(2))
   .options({
