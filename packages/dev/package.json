@@ -14,7 +14,7 @@
   },
   "sideEffects": false,
   "type": "module",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "bin": {
     "alt-research-ci-ghact-build": "./scripts/alt-research-ci-ghact-build.mjs",
     "alt-research-dev-build-ts": "./scripts/alt-research-dev-build-ts.mjs",
