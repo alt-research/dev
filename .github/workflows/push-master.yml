@@ -5,7 +5,7 @@ on:
       - master
 
 jobs:
-  master:
+  npm-publish:
     if: "! startsWith(github.event.head_commit.message, '[CI Skip]')"
     strategy:
       matrix:

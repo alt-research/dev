@@ -1,5 +1,5 @@
 {
-  "author": "Jaco Greeff <jacogr@gmail.com>",
+  "author": "Alt Research",
   "bugs": "https://github.com/alt-research/dev/issues",
   "contributors": [],
   "description": "A collection of shared CI scripts and development environment used by @alt-research projects",
@@ -14,7 +14,7 @@
   },
   "sideEffects": false,
   "type": "module",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "bin": {
     "alt-research-ci-ghact-build": "./scripts/alt-research-ci-ghact-build.mjs",
     "alt-research-dev-build-ts": "./scripts/alt-research-dev-build-ts.mjs",
@@ -67,11 +67,12 @@
     "coveralls": "^3.1.1",
     "eslint": "^8.7.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-config-standard": "^16.0.3",
+    "eslint-config-standard": "^17.0.0",
     "eslint-import-resolver-node": "^0.3.6",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-import-newlines": "^1.1.7",
     "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-n": "^15.2.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^6.0.0",
@@ -96,6 +97,7 @@
     "rimraf": "^3.0.2",
     "rollup": "^2.66.0",
     "rollup-plugin-cleanup": "^3.2.1",
+    "styled-components": "^5.3.5",
     "typescript": "^4.5.5",
     "yargs": "^17.3.1"
   },
@@ -104,6 +106,8 @@
     "@types/node": "^17.0.10",
     "@types/react": "^17.0.38",
     "@types/yargs": "^17.0.8",
-    "react": "^17.0.2"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-is": "^17.0.2"
   }
 }
